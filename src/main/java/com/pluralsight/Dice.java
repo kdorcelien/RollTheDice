@@ -12,12 +12,15 @@ public class Dice {
             int sum = roll1 + roll2;
 
             if (sum == 2) counter2++;
-            if (sum == 4) counter4++;
-            if (sum == 6) counter6++;
-            if (sum == 7) counter7++;
+            else if (sum == 4) counter4++;
+            else if (sum == 6) counter6++;
+            else if (sum == 7) counter7++;
 
             System.out.println("Roll " + i + ": " + roll1 + " - " + roll2 + " Sum: " + sum);
-
+            System.out.println("Count of 2: " + counter2);
+            System.out.println("Count of 4: " + counter4);
+            System.out.println("Count of 6: " + counter6);
+            System.out.println("Count of 7: " + counter7);
         }
 
     }
